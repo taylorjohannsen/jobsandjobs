@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
+    <link type="text/css" rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../public/css/search.css">
+    <link rel="shortcut icon" href="../public/images/favicon.ico">   
+    <title>Jobs&Jobs - Search</title>
+</head>
+<body>
+    <a class="textDec" href="/"><h1 class="jobs">Jobs&Jobs</h1></a>
+    <form class="margins" action="/searchdb" method="POST" autocomplete="off">
+        <div class="jobTitlePad">Search</div>
+        <input class="inputForm" type="text" name="keyword" placeholder="Keyword" >
+        <input class="inputForm" type="text" name="location" placeholder="Location">
+        <br>
+        <a class="searchBack" href="/">Go Back</a>
+        <button class="subBut" type="submit">Submit</button>
+    </form>
+    <br>
+    <div class="anything">
+        <% print.forEach(function (post) { %>
+            <div class="container">
+                <div class="topBar">
+                    <div class="topLeft">
+                        <div class="title"><%= post.title %></div>
+                        <div class="username">by <%= post.name %></div>
+                    </div>
+                    <div class="date"><%= post.date %></div>
+                </div>
+                <div class="body2">
+                    <div class="location">Location: <%= post.location %></div>
+                    <br>
+                    <%= post.body %>
+                </div>
+            </div>
+        <% }) %>    
+    </div>
+    <script type="text/javascript" src="/public/client.js"></script>
+</body>
+</html>  

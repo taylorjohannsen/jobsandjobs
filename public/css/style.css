@@ -1,0 +1,144 @@
+.title {
+    font-size: 20px;
+    color: black;
+}
+.topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+}
+.date {
+    float: right;
+    padding-top: 4px;
+}
+.topLeft {
+    display: flex;
+    flex-direction: row;
+}
+.username {
+    padding-top: 7px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.body2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: black;
+    font-size: 15px;
+}
+.container {
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.575);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+}
+.jobs {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+body {
+    background: rgb(41, 40, 40);
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 100px;
+}
+.addBut {
+    height: 30px;
+    min-width: 150px;
+    margin-left: 200px;
+    margin-top: 10px;
+    background: rgb(158, 157, 157);
+    border: none;
+    transition: 1s all ease;
+}
+.addBut:hover {
+    background: white;
+    transition: 1s all ease;
+}
+button:focus {
+    outline: 0;
+}
+.location {
+    font-size: 20px;
+}
+.inputForm {
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+input:focus {
+    outline: 0;
+}
+textarea:focus {
+    outline: 0;
+}
+.descForm {
+    width: 500px;
+    border-radius: 10px;
+    padding: 5px;
+    height: 200px;
+
+}
+.jobTitle {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.addCont {
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 200px;
+}
+.butForm {
+    height: 30px;
+    min-width: 150px;
+    margin-left: 300px;
+    margin-top: 10px;
+    background: rgb(158, 157, 157);
+    border: none;
+    transition: 1s all ease;
+}
+.butForm:hover {
+    background: white;
+    transition: 1s all ease;
+}
+.searchBut {
+    height: 30px;
+    min-width: 150px;
+    margin-top: 10px;
+    background: rgb(158, 157, 157);
+    border: none;
+    transition: 1s all ease;
+    margin-left: 10px;
+}
+.searchBut:hover {
+    background: white;
+    transition: 1s all ease;
+}
+
+@media only screen and (max-width: 1200px) {
+    .top {
+        flex-wrap: wrap;
+        margin-left: 4%;
+    }
+    .addBut {
+        float: left;
+        margin-left: 10px;
+    }
+}

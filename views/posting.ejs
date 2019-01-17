@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
+    <link type="text/css" rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../public/css/post.css">
+    <link rel="shortcut icon" href="../public/images/favicon.ico">   
+    <title>Jobs&Jobs - Posting</title>
+</head>
+<body>
+    <form class="margin" action="/addpost" method="POST" autocomplete="off">
+        <a class="textDec" href="/"><h1 class="jobs">Jobs&Jobs</h1></a>
+        <div class="addCont">
+            <div class="jobTitle">New Job Posting</div>
+            <div class="flex">
+                <input class="inputForm" type="text" name="title" placeholder="Job Title" >
+                <input class="inputForm" type="text" name="company" placeholder="Company">
+                <input class="inputForm" type="text" name="location" placeholder="Location">
+                <br>
+                <div>Job Description:</div>
+                <textarea id="textarea" class="descForm" type="text" name="description"></textarea>
+                <button class="butForm" type="submit">Submit Job Posting</button>
+                <a class="goback" href="/">Go Back</a>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="/public/client.js"></script>
+</body>
+</html>

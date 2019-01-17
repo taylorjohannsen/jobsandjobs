@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
+    <link type="text/css" rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../public/css/style.css">
+    <link rel="shortcut icon" href="../public/images/favicon.ico">   
+    <title>Jobs&Jobs</title>
+</head>
+<body>
+    <div class="top">
+        <h1 class="jobs">Jobs&Jobs</h1>
+        <form action="/newpost"> 
+            <button type="submit" class="addBut">Add Job Posting</button>
+        </form>
+        <form action="/search">
+            <button type="submit" class="searchBut">Search</button>
+        </form>
+    </div>
+    <br>
+    <% print.forEach(function (post) { %>
+        <div class="container">
+            <div class="topBar">
+                <div class="topLeft">
+                    <div class="title"><%= post.title %></div>
+                    <div class="username">by <%= post.name %></div>
+                </div>
+                <div class="date"><%= post.date %></div>
+            </div>
+            <div class="body2">
+                <div class="location">Location: <%= post.location %></div>
+                <br>
+                <%= post.body %>
+            </div>
+        </div>
+    <% }) %>
+    <script type="text/javascript" src="/public/client.js"></script>
+</body>
+</html> 
